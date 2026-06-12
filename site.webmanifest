@@ -1,7 +1,7 @@
 {
   "name": "Z-SPOT",
   "short_name": "Z-SPOT",
-  "description": "WiFi hotspot installation, internet access management, and network support in Uganda.",
+  "description": "Networking, WiFi installation, internet access management, and network support in Uganda.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

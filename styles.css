@@ -130,13 +130,27 @@ img {
 }
 
 .brand {
+  position: relative;
   display: inline-flex;
   align-items: center;
   min-height: auto;
-  padding: 0;
+  padding: 0.18rem 0.55rem 0.18rem 0;
   background: transparent;
   border: 0;
   box-shadow: none;
+}
+
+.brand::before {
+  content: "";
+  position: absolute;
+  inset: -0.35rem -0.65rem -0.35rem -0.2rem;
+  z-index: -1;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 34% 50%, rgba(50, 211, 255, 0.28), transparent 62%),
+    rgba(2, 13, 28, 0.28);
+  filter: blur(0.4px);
+  opacity: 0.9;
 }
 
 .brand img {
@@ -144,7 +158,12 @@ img {
   height: 3.6rem;
   object-fit: contain;
   object-position: left center;
-  filter: drop-shadow(0 10px 22px rgba(50, 211, 255, 0.34));
+  filter:
+    brightness(1.16)
+    saturate(1.2)
+    drop-shadow(0 0 3px rgba(255, 255, 255, 0.72))
+    drop-shadow(0 0 18px rgba(50, 211, 255, 0.58))
+    drop-shadow(0 14px 30px rgba(0, 7, 20, 0.42));
 }
 
 .nav-links {
@@ -376,14 +395,21 @@ h3 {
 }
 
 .brand-orb::after {
-  inset: 22%;
-  background: radial-gradient(circle, rgba(24, 189, 242, 0.28), transparent 70%);
+  inset: 18%;
+  background:
+    radial-gradient(circle, rgba(255, 255, 255, 0.08), transparent 42%),
+    radial-gradient(circle, rgba(24, 189, 242, 0.34), transparent 70%);
   animation: centerGlow 2.4s ease-in-out infinite;
 }
 
 .brand-orb img {
   width: 16rem;
-  filter: drop-shadow(0 18px 32px rgba(50, 211, 255, 0.32));
+  filter:
+    brightness(1.18)
+    saturate(1.25)
+    drop-shadow(0 0 4px rgba(255, 255, 255, 0.7))
+    drop-shadow(0 0 26px rgba(50, 211, 255, 0.58))
+    drop-shadow(0 20px 36px rgba(0, 7, 20, 0.5));
   animation: logoBreathe 3s ease-in-out infinite;
 }
 
@@ -597,14 +623,23 @@ h3 {
   width: 8.8rem;
   aspect-ratio: 1;
   place-items: center;
-  border: 0;
-  background: transparent;
-  box-shadow: none;
+  border: 1px solid rgba(50, 211, 255, 0.2);
+  background:
+    radial-gradient(circle, rgba(50, 211, 255, 0.16), transparent 64%),
+    rgba(2, 13, 28, 0.22);
+  box-shadow:
+    0 0 34px rgba(50, 211, 255, 0.2),
+    inset 0 0 22px rgba(50, 211, 255, 0.08);
   transform: translate(-50%, -50%);
 }
 
 .about-visual-core img {
   width: 7.4rem;
+  filter:
+    brightness(1.18)
+    saturate(1.2)
+    drop-shadow(0 0 3px rgba(255, 255, 255, 0.68))
+    drop-shadow(0 0 18px rgba(50, 211, 255, 0.5));
 }
 
 .about-node {
