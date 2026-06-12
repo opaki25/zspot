@@ -706,6 +706,19 @@ h3 {
   box-shadow: none;
 }
 
+.team-photo-image {
+  width: 8.5rem;
+  aspect-ratio: 1;
+  margin-bottom: 1rem;
+  border: 2px solid rgba(7, 121, 216, 0.22);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  box-shadow:
+    0 18px 38px rgba(7, 121, 216, 0.18),
+    0 0 0 0.55rem rgba(255, 255, 255, 0.46);
+}
+
 .team-photo-placeholder span {
   max-width: 5.8rem;
   color: #6b7f93;
