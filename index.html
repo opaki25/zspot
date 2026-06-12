@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Z-SPOT installs and manages modern WiFi hotspot systems for businesses, hostels, apartments, campuses, cafes, and public spaces."
+    />
+    <meta name="theme-color" content="#f5fbff" />
+    <meta property="og:title" content="Z-SPOT | Fast. Smart. Connected." />
+    <meta
+      property="og:description"
+      content="Professional WiFi hotspot installation, billing systems, MikroTik configuration, and outdoor WiFi coverage."
+    />
+    <meta property="og:type" content="website" />
+    <title>Z-SPOT | WiFi Hotspot Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="assets/zspot-logo-transparent.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas class="particle-field" id="particleField" aria-hidden="true"></canvas>
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+    <div class="page-frame">
+      <header class="site-header" data-reveal>
+        <a class="brand" href="#top" aria-label="Z-SPOT home">
+          <img src="assets/zspot-logo-transparent.png" alt="Z-SPOT logo" />
+        </a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#coverage">Why us</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="nav-button" href="#contact">Get started</a>
+      </header>
+
+      <main id="top">
+        <section class="hero section-shell">
+          <div class="hero-copy" data-reveal>
+            <p class="eyebrow">Hotspot installation & internet access</p>
+            <h1>Fast. Smart. Connected.</h1>
+            <p class="hero-subtitle">
+              Professional WiFi hotspot solutions for businesses, hostels,
+              apartments, campuses, cafes, and public spaces.
+            </p>
+            <div class="hero-actions" aria-label="Primary calls to action">
+              <a class="button button-primary" href="#contact"><span>Get Connected</span></a>
+              <a class="button button-ghost" href="#services"><span>View Services</span></a>
+            </div>
+          </div>
+
+          <div class="hero-visual" data-reveal aria-label="Z-SPOT hotspot dashboard">
+            <div class="brand-orb">
+              <img src="assets/zspot-logo-transparent.png" alt="" aria-hidden="true" />
+              <span class="signal-ring ring-one"></span>
+              <span class="signal-ring ring-two"></span>
+              <span class="signal-ring ring-three"></span>
+            </div>
+            <div class="mini-panel signal-panel">
+              <span>Live speed</span>
+              <strong><span id="liveSpeed">--</span><small> Mbps</small></strong>
+            </div>
+          </div>
+        </section>
+
+        <div class="lower-background">
+          <section class="services section-shell" id="services">
+            <div class="section-heading" data-reveal>
+              <h2>Our Services</h2>
+            </div>
+            <div class="service-grid">
+              <article class="glass-card service-card" data-reveal>
+                <img class="service-icon-image" src="assets/service-hotspot-installation-cutout.png" alt="" aria-hidden="true" />
+                <h3>Hotspot Installation</h3>
+                <p>Access-point planning, mounting, setup, and live testing.</p>
+              </article>
+              <article class="glass-card service-card" data-reveal>
+                <img class="service-icon-image" src="assets/service-wifi-billing-cutout.png" alt="" aria-hidden="true" />
+                <h3>WiFi Billing Systems</h3>
+                <p>Voucher access, time plans, user control, and reporting.</p>
+              </article>
+              <article class="glass-card service-card" data-reveal>
+                <img class="service-icon-image" src="assets/service-mikrotik-config-cutout.png" alt="" aria-hidden="true" />
+                <h3>MikroTik Configuration</h3>
+                <p>Queues, bandwidth shaping, routing, portals, and security.</p>
+              </article>
+              <article class="glass-card service-card" data-reveal>
+                <img class="service-icon-image" src="assets/service-outdoor-coverage-cutout.png" alt="" aria-hidden="true" />
+                <h3>Outdoor WiFi Coverage</h3>
+                <p>Long-range links for compounds, campuses, and public zones.</p>
+              </article>
+              <article class="glass-card service-card" data-reveal>
+                <img class="service-icon-image" src="assets/service-network-maintenance-cutout.png" alt="" aria-hidden="true" />
+                <h3>Network Maintenance</h3>
+                <p>Monitoring, troubleshooting, optimization, and support.</p>
+              </article>
+              <article class="glass-card service-card" data-reveal>
+                <img class="service-icon-image" src="assets/service-business-internet-cutout.png" alt="" aria-hidden="true" />
+                <h3>Business Internet Solutions</h3>
+                <p>Reliable connectivity for venues, teams, and rental spaces.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="about section-shell" id="about">
+            <div class="about-story">
+              <div class="about-copy" data-reveal>
+                <h2>About Z-SPOT</h2>
+                <p>
+                  Z-SPOT is a growing internet solutions company focused on
+                  providing reliable hotspot access, WiFi installation, smart
+                  network management, and customer support for hostels, rentals,
+                  restaurants, small businesses, and shared spaces. We are
+                  building practical internet systems that are affordable, easy
+                  to manage, and designed for local users.
+                </p>
+              </div>
+              <div class="about-tech-visual glass-card" data-reveal aria-label="Z-SPOT network visual">
+                <span class="about-node node-one"></span>
+                <span class="about-node node-two"></span>
+                <span class="about-node node-three"></span>
+                <span class="about-link link-one"></span>
+                <span class="about-link link-two"></span>
+                <span class="about-link link-three"></span>
+                <div class="about-visual-core">
+                  <img src="assets/zspot-logo-transparent.png" alt="" aria-hidden="true" />
+                </div>
+                <div class="about-signal" aria-hidden="true"></div>
+              </div>
+            </div>
+            <div class="team-block">
+              <div class="team-heading" data-reveal>
+                <h3>Meet the Team Behind Z-SPOT</h3>
+              </div>
+              <div class="team-grid">
+                <article class="glass-card team-card" data-reveal>
+                  <div class="team-photo-placeholder" aria-hidden="true">
+                    <span>Photo Coming Soon</span>
+                  </div>
+                  <span class="role-badge">CEO</span>
+                  <h4>OPAKRWOTH JONATHAN</h4>
+                  <p>Leads business strategy, partnerships, customer relations, and overall company direction.</p>
+                </article>
+                <article class="glass-card team-card" data-reveal>
+                  <div class="team-photo-placeholder" aria-hidden="true">
+                    <span>Photo Coming Soon</span>
+                  </div>
+                  <span class="role-badge">CTO</span>
+                  <h4>AMULALA DAVID</h4>
+                  <p>Oversees technical operations, network setup, hotspot systems, and technology development.</p>
+                </article>
+                <article class="glass-card team-card" data-reveal>
+                  <div class="team-photo-placeholder" aria-hidden="true">
+                    <span>Photo Coming Soon</span>
+                  </div>
+                  <span class="role-badge">CFO</span>
+                  <h4>TAREMWA ELVIS</h4>
+                  <p>Manages finances, records, budgeting, accountability, and business planning.</p>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section class="coverage why-section section-shell" id="coverage">
+            <div class="section-heading why-heading centered" data-reveal>
+              <h2>Why Choose Z-SPOT?</h2>
+              <p class="section-subtitle">
+                Reliable internet solutions built for hostels, rentals,
+                restaurants, small businesses, and shared spaces.
+              </p>
+            </div>
+            <div class="why-grid">
+              <article class="glass-card why-card" data-reveal>
+                <img class="why-icon-image" src="assets/why-fast-internet-cutout.png" alt="" aria-hidden="true" />
+                <h3>Fast &amp; Stable Internet</h3>
+              </article>
+              <article class="glass-card why-card" data-reveal>
+                <img class="why-icon-image" src="assets/why-user-management-cutout.png" alt="" aria-hidden="true" />
+                <h3>Smart User Management</h3>
+              </article>
+              <article class="glass-card why-card" data-reveal>
+                <img class="why-icon-image" src="assets/why-secure-connections-cutout.png" alt="" aria-hidden="true" />
+                <h3>Secure Connections</h3>
+              </article>
+              <article class="glass-card why-card" data-reveal>
+                <img class="why-icon-image" src="assets/why-availability-cutout.png" alt="" aria-hidden="true" />
+                <h3>24/7 Availability</h3>
+              </article>
+              <article class="glass-card why-card" data-reveal>
+                <img class="why-icon-image" src="assets/why-billing-cutout.png" alt="" aria-hidden="true" />
+                <h3>Easy Payments &amp; Billing</h3>
+              </article>
+              <article class="glass-card why-card" data-reveal>
+                <img class="why-icon-image" src="assets/why-local-support-cutout.png" alt="" aria-hidden="true" />
+                <h3>Local Support Team</h3>
+              </article>
+            </div>
+            <div class="why-stats glass-card" data-reveal>
+              <div class="why-stat">
+                <strong>3+</strong>
+                <span>Active Sites</span>
+              </div>
+              <div class="why-stat">
+                <strong>24/7</strong>
+                <span>Network Access</span>
+              </div>
+              <div class="why-stat">
+                <strong>100+</strong>
+                <span>Connected Users</span>
+              </div>
+              <div class="why-stat">
+                <strong>Z-NET</strong>
+                <span>Billing Coming Soon</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="gallery section-shell" id="installations">
+            <div class="section-heading" data-reveal>
+              <h2>Installations</h2>
+            </div>
+            <div class="installations-collage">
+              <figure class="install-card install-large" data-reveal>
+                <img src="assets/1000465133.jpg" alt="Indoor router and access point installation setup" loading="lazy" />
+                <figcaption>Indoor hotspot setup</figcaption>
+              </figure>
+              <figure class="install-card" data-reveal>
+                <img src="assets/1000465134.jpg" alt="Wireless router for hotspot network service" loading="lazy" />
+                <figcaption>Router systems</figcaption>
+              </figure>
+              <figure class="install-card" data-reveal>
+                <img src="assets/1000465135.jpg" alt="Outdoor access point for wide WiFi coverage" loading="lazy" />
+                <figcaption>Outdoor access points</figcaption>
+              </figure>
+              <figure class="install-card install-tall" data-reveal>
+                <img src="assets/1000465136.jpg" alt="Pole mounted outdoor WiFi antenna installation" loading="lazy" />
+                <figcaption>Antenna coverage</figcaption>
+              </figure>
+              <figure class="install-card" data-reveal>
+                <img src="assets/1000465137.jpg" alt="Network switches for business internet installation" loading="lazy" />
+                <figcaption>Switching equipment</figcaption>
+              </figure>
+              <figure class="install-card install-wide" data-reveal>
+                <img src="assets/1000465138.jpg" alt="Network rack cabling for internet management setup" loading="lazy" />
+                <figcaption>Network setups</figcaption>
+              </figure>
+              <figure class="install-card" data-reveal>
+                <img src="assets/1000465139.jpg" alt="Ethernet cable connection for structured network setup" loading="lazy" />
+                <figcaption>Structured cabling</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="contact section-shell" id="contact">
+            <div class="contact-copy" data-reveal>
+              <h2>Contact Us</h2>
+              <p>Reach Z-SPOT for hotspot installation, billing setup, coverage planning, or network support.</p>
+            </div>
+            <address class="contact-card glass-card" data-reveal>
+              <a href="tel:+256777038299">
+                <span>Phone</span>
+                +256 777 038 299
+              </a>
+              <a
+                href="https://wa.me/256777038299?text=Hello%20Z-SPOT%2C%20I%20would%20like%20to%20inquire%20about%20your%20WiFi%20hotspot%20services."
+                target="_blank"
+                rel="noopener"
+              >
+                <span>WhatsApp</span>
+                Chat with Z-SPOT on WhatsApp
+              </a>
+              <a href="mailto:zspotinternet@gmail.com?subject=Z-SPOT%20WiFi%20Hotspot%20Inquiry">
+                <span>Email</span>
+                zspotinternet@gmail.com
+              </a>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Kampala%2C%20Uganda"
+                target="_blank"
+                rel="noopener"
+              >
+                <span>Location</span>
+                Kampala, Uganda
+              </a>
+            </address>
+          </section>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <p>© 2026 Z-SPOT. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
