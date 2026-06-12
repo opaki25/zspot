@@ -144,7 +144,7 @@ img {
   height: 3.6rem;
   object-fit: contain;
   object-position: left center;
-  filter: none;
+  filter: brightness(1.22) saturate(1.22);
 }
 
 .nav-links {
@@ -385,7 +385,7 @@ h3 {
 
 .brand-orb img {
   width: 16rem;
-  filter: none;
+  filter: brightness(1.18) saturate(1.2);
   animation: logoBreathe 3s ease-in-out infinite;
 }
 
@@ -607,7 +607,7 @@ h3 {
 
 .about-visual-core img {
   width: 7.4rem;
-  filter: none;
+  filter: brightness(1.18) saturate(1.2);
 }
 
 .about-node {
