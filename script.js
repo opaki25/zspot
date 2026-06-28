@@ -166,7 +166,7 @@ function drawParticles() {
 
     ctx.beginPath();
     ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-    ctx.fillStyle = "rgba(60, 210, 255, 0.55)";
+    ctx.fillStyle = "rgba(95, 231, 255, 0.62)";
     ctx.fill();
 
     for (let next = index + 1; next < particles.length; next += 1) {
@@ -179,7 +179,7 @@ function drawParticles() {
         ctx.beginPath();
         ctx.moveTo(particle.x, particle.y);
         ctx.lineTo(other.x, other.y);
-        ctx.strokeStyle = `rgba(46, 198, 255, ${0.16 * (1 - distance / 120)})`;
+        ctx.strokeStyle = `rgba(95, 231, 255, ${0.18 * (1 - distance / 120)})`;
         ctx.lineWidth = 1;
         ctx.stroke();
       }
@@ -216,7 +216,7 @@ function drawCursorNetwork(now) {
     ctx.beginPath();
     ctx.moveTo(pointer.x, pointer.y);
     ctx.lineTo(node.x, node.y);
-    ctx.strokeStyle = `rgba(7, 121, 216, ${opacity * 0.34})`;
+    ctx.strokeStyle = `rgba(95, 231, 255, ${opacity * 0.34})`;
     ctx.stroke();
 
     for (let next = index + 1; next < nodes.length; next += 1) {
@@ -227,15 +227,15 @@ function drawCursorNetwork(now) {
         ctx.beginPath();
         ctx.moveTo(node.x, node.y);
         ctx.lineTo(other.x, other.y);
-        ctx.strokeStyle = `rgba(24, 189, 242, ${0.22 * (1 - distance / 75)})`;
+        ctx.strokeStyle = `rgba(95, 231, 255, ${0.24 * (1 - distance / 75)})`;
         ctx.stroke();
       }
     }
 
     ctx.beginPath();
     ctx.arc(node.x, node.y, node.size, 0, Math.PI * 2);
-    ctx.fillStyle = `rgba(7, 121, 216, ${opacity})`;
-    ctx.shadowColor = "rgba(24, 189, 242, 0.55)";
+    ctx.fillStyle = `rgba(95, 231, 255, ${opacity})`;
+    ctx.shadowColor = "rgba(95, 231, 255, 0.55)";
     ctx.shadowBlur = 10;
     ctx.fill();
     ctx.shadowBlur = 0;
@@ -243,8 +243,8 @@ function drawCursorNetwork(now) {
 
   ctx.beginPath();
   ctx.arc(pointer.x, pointer.y, 3.2, 0, Math.PI * 2);
-  ctx.fillStyle = "rgba(0, 109, 205, 0.85)";
-  ctx.shadowColor = "rgba(24, 189, 242, 0.75)";
+  ctx.fillStyle = "rgba(95, 231, 255, 0.9)";
+  ctx.shadowColor = "rgba(95, 231, 255, 0.75)";
   ctx.shadowBlur = 14;
   ctx.fill();
   ctx.restore();
